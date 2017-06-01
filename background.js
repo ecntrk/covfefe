@@ -10,7 +10,6 @@ if(!isExec)
 	{
 		the_tab_id = tab.id;		
 		isExec = true;
-
 	    //alert(the_tab_id);
 		chrome.tabs.executeScript(tab.ib, {file: 'dojob.js'});
 	}

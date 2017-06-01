@@ -1,4 +1,3 @@
-
 (function() {
 var elems = document.getElementsByClassName("commentary-event");
 var num = elems.length;
@@ -31,7 +30,33 @@ elems[count].innerHTML = f;
 //alert(i);
 
 }
-var f = txt.replace(/FOUR/g, "FOUR!");
-elems[count].innerHTML = f;
-            }
+var cheers = [
+    " What a shot!",
+    " Olaayy! ole ole ole!",
+    " boy, that sailed!",
+    " that's what we call covfefe!",
+  	" Hell yeah!",
+  	" oh yes babe!",
+  	" Ouch, did that hurt!",
+  	" Authentic bullying this!"  
+];
+var curses = [
+	" goddammit joe!",
+	" like being hit wicket in a wide ball!",
+	" ok that's gone!",
+	" gone with the wind.. or something!",
+	" he fucked up",
+	" go chase that!",
+	" take that!"
+];
+
+var chN = Math.floor((Math.random() * 7));
+	var e = txt.replace(/SIX/g, "SIX!"+cheers[chN]);
+	var f = e.replace(/FOUR/g, "FOUR!"+cheers[chN]);
+		//elems[count].innerHTML = f;
+	var g = f.replace(/OUT/g, "OUT!"+curses[chN]);
+		elems[count].innerHTML = g;
+//va
+            
+}
 })();
