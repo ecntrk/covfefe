@@ -1,0 +1,23 @@
+{
+  "name": "Covfefe unit",
+  "description": "Converts kph to retard unit for Cricinfo. Author: Debmalya Sinha. debmalya.01@gmail.com",
+  "manifest_version": 2,
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Covfefe",
+    "default_icon": "icon.png"
+    
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  }
+
+}
