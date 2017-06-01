@@ -1,5 +1,7 @@
 (function() {
 var elems = document.getElementsByClassName("commentary-event");
+if(elems!= null) //so this script doesn't halt midway!
+{
 var num = elems.length;
 //alert(num);
 for(count = 0; count < num; count++){
@@ -41,7 +43,7 @@ for(count = 0; count < num; count++){
 		//alert(ballt);
 
 		var cheers = [
-		    " Paglaa KHir Kha!",
+		    " Welcome mate!",
 		    " Olaayy! ole ole ole!",
 		    " boy, that sailed!",
 		  	" Hell yeah!",
@@ -50,7 +52,7 @@ for(count = 0; count < num; count++){
 		];
 		var curses = [
 			" goddammit joe!",
-			" like being hit wicket in a wide ball!",
+			" like being hit wicket on a wide ball!",
 			" ok that's gone!",
 			" gone with the wind.. or something!",
 		  	" Ouch, did that hurt!",
@@ -66,5 +68,6 @@ for(count = 0; count < num; count++){
 		}
 
  	}           
+}
 }
 })();

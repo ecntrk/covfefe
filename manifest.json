@@ -1,8 +1,9 @@
 {
-  "name": "Covfefe unit",
-  "description": "Converts kph to retard unit for Cricinfo. Author: Debmalya Sinha. debmalya.01@gmail.com",
+  "name": "Covfefe",
+  "description": "Adds sassy comments to score! Converts kph to mph for Cricinfo. Author: Debmalya Sinha. debmalya.01@gmail.com",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "0.1.2",
+  "icons": { "128": "icon.jpg" },
   "permissions": [
     "tabs",
     "http://*/*",
@@ -14,9 +15,7 @@
     
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": true
   }
 
