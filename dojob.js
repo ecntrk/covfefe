@@ -25,19 +25,24 @@ var nn = parseInt(str);
 var nnn = nn * 0.621371;
 //alert(str);
 str = str+"kph";
-var f = txt.replace(str, str+"<b> / "+nnn+"mph </b>");
-elems[count].innerHTML = f;
+var e = txt.replace(str, str+"<b> / "+nnn+"mph </b>");
+elems[count].innerHTML = e;
 //alert(i);
 
 }
+else{
+var overs = elems[count].getElementsByClassName("commentary-overs")[0];
+var ballt = overs.innerHTML; 
+var ballN = overs.innerHTML.length;
+var ball = parseInt(ballt[ballN-1])-1;
+//alert(ball);
+
 var cheers = [
-    " What a shot!",
+    " Paglaa KHir Kha!",
     " Olaayy! ole ole ole!",
     " boy, that sailed!",
-    " that's what we call covfefe!",
   	" Hell yeah!",
   	" oh yes babe!",
-  	" Ouch, did that hurt!",
   	" Authentic bullying this!"  
 ];
 var curses = [
@@ -45,18 +50,17 @@ var curses = [
 	" like being hit wicket in a wide ball!",
 	" ok that's gone!",
 	" gone with the wind.. or something!",
-	" he fucked up",
-	" go chase that!",
-	" take that!"
+  	" Ouch, did that hurt!",
+	" go chase that!"
 ];
 
-var chN = Math.floor((Math.random() * 7));
-	var e = txt.replace(/SIX/g, "SIX!"+cheers[chN]);
-	var f = e.replace(/FOUR/g, "FOUR!"+cheers[chN]);
-		//elems[count].innerHTML = f;
-	var g = f.replace(/OUT/g, "OUT!"+curses[chN]);
-		elems[count].innerHTML = g;
-//va
-            
+//var chN = Math.floor((Math.random() * 7));
+var f = txt.replace(/SIX/g, "SIX!"+cheers[ball]);
+var g = f.replace(/FOUR/g, "FOUR!"+cheers[ball]);
+	//elems[count].innerHTML = f;
+var h = g.replace(/OUT/g, "OUT!"+curses[ball]);
+	elems[count].innerHTML = h;
+
+ }           
 }
 })();
